@@ -2,7 +2,8 @@
 @import  url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
 * {
     margin: 0;
-}
+    padding: 0;
+    box-sizing: border-box;}
 /**----------------- PRODUCTOS --------------*/
 #main-productos {
     background-color: #fff;
@@ -64,6 +65,48 @@ object-fit: cover
     }
 }
 
+/**----------------- INGRESOS --------------*/
+
+.cont-ingresos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto
+}
+
+.cont-ingresos .card-ingresos {
+    width: 350px;
+    height: 430px;
+    border-radius: 8px;
+
+    overflow: hidden;
+    margin: 20px 80px 20px 80px;
+    text-align: center;
+}
+
+.cont-ingresos .card-ingresos img {
+    width: 100%;
+    max-width: 350px;
+    height: 350px;
+}
+.ing-titulo {
+    font-size: large;
+    text-align: center;
+    margin-bottom: 2%;
+    padding: 2%;
+}
+.ing-titulo h2 {
+    color: black; 
+    font-size: 3em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 2%;
+    padding-bottom: 1%;
+    text-shadow: red 2px 2px 3px;
+}
+
+.ing-titulo p {
+    text-shadow: whitesmoke 2px 2px 3px;
+}
 
 /**----------------- SOBRE NOSOTROS --------------*/
 
@@ -307,7 +350,6 @@ border-radius: 8px;
 text-shadow: 0 2px 2px rgb(197, 196, 196);
 overflow: hidden;
 margin: 20px 80px 20px 80px;
-
 text-align: center;
 transition: all 0.25s;
 }
