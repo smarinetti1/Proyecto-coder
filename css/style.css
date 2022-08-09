@@ -23,28 +23,6 @@
 
 /**----------------- INGRESOS --------------*/
 
-.cont-ingresos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto
-}
-
-.cont-ingresos .card-ingresos {
-    width: 350px;
-    height: 430px;
-    border-radius: 8px;
-
-    overflow: hidden;
-    margin: 20px 80px 20px 80px;
-    text-align: center;
-}
-
-.cont-ingresos .card-ingresos img {
-    width: 100%;
-    max-width: 350px;
-    height: 350px;
-}
 
 
 .ing-titulo {
@@ -91,7 +69,6 @@ padding-bottom: 1%;
 /**----------------- CONTACTO --------------*/
 
 
-/*!----------------- MAIN ------------------*/
 
 
 /*!----------------- HEADER ------------------*/
@@ -123,79 +100,88 @@ text-shadow: #555 2px 2px 3px
         text-align: center;  
         font-family: Georgia, 'Times New Roman', Times, serif;  
             }
+            
+            @media (max-width: 995px) {
+                .promo {
+                    height: 120px;
+                }
+                .promoh1 {
+                    font-size: 2em;
+                }
+                .promop {
+                    font-size: 80%;
+                }
 
-/*!----------------- TEXTO ------------------*/
+            }
 
-    .bienvenidos  {
 
-        display: flex;
-        align-items: center;
-        flex-wrap: wrap;
-        align-content: center;
-        justify-content: center;
-        padding-top: 1%;
-        padding-left: 1%;
-        padding-right: 1%;
-        }
 
-.bienvenidosh1 {
-padding-bottom: 1%;
-font-weight: 600;
+/* !----------------- SECTION 1 ------------------ */
+#principal {
+background: linear-gradient(rgba(4, 7, 12, 0.75) , rgba(4, 7, 12, 0.75)), url(../img/fondo-blanco.jpg) no-repeat center center;
+background-size: cover;
 }
 
-.bienvenidosp {
-padding-bottom: 4%;
-}
-
-/* !----------------- ZAPATILLAS ------------------ */
-.zapatillas {
+.contenedor-gen{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: auto
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.contenedor-texto{
+
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: center;
+    color: whitesmoke;
+    margin-right: 20%;
 }
 
-.zapatillas .card{
-width: 350px;
-height: 430px;
-border-radius: 8px;
-text-shadow: 0 2px 2px rgb(197, 196, 196);
-overflow: hidden;
-margin: 20px 80px 20px 80px;
-text-align: center;
-transition: all 0.25s;
-}
-.zapatillas .card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px gray;
+.syss{
+color: greenyellow;
 }
 
-.card  img {
-    width: 100%;
-    max-width: 350px;
-    height: 350px;
-}
-.card_con  img {
-    width: 100%;
-    max-width: 550px;
-    height: 350px;
-}
-.zapatillas .card_con {
-    width: 550px;
-height: 430px;
-border-radius: 8px;
-text-shadow: 0 2px 2px rgb(197, 196, 196);
-overflow: hidden;
-margin: 20px 80px 20px 80px;
-
-text-align: center;
-transition: all 0.25s;
-}
-.zapatillas .card_con:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 12px 16px gray;
+.cont-img img {
+    width: 60%;
+    border-radius: 0 20px 20px 0px;
+    transition: 2s;
 }
 
+
+.cont-img img:hover {
+    filter: blur(5px);
+
+}
+
+
+@media (max-width:1050px ){
+    .cont-img img  {
+            width: 80%;
+    }
+}
+@media (max-width:780px){
+
+    .cont-img img {
+        border-radius: 20px;
+        margin-left: 4%;
+        padding: 2% 0 2% 0;
+    }
+
+    .contenedor-texto p {
+display: none;
+}
+}
+@media (max-width:560px){
+    .cont-img img {
+        width: 90%;
+        border-radius: 20px;
+        margin-left: 4%;
+        padding: 2% 0 2% 0;
+    }
+}
+
+/*! ----------------------SECTION 2--------------------- */
+
+    
 
 
 
