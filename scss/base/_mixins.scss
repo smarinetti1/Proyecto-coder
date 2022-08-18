@@ -1,0 +1,6 @@
+
+@mixin texto ($align, $color, $margin) {
+    align-items: $align;
+    color: $color;
+    margin-right: $margin;
+}

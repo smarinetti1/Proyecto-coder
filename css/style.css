@@ -4,6 +4,11 @@
   padding: 0;
   box-sizing: border-box; }
 
+.contenedor-gen {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse; }
+
 /**----------------- SOBRE NOSOTROS --------------*/
 .acd_1 {
   padding-top: 1%;
@@ -28,7 +33,7 @@
   margin-bottom: 2%;
   padding: 2%; }
   .ing-titulo h2 {
-    color: black;
+    color: #000000;
     font-size: 3em;
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-top: 2%;
@@ -48,7 +53,6 @@
   #gallery .col-lg-4:hover {
     transform: scaleY(1.1); }
 
-/*!----------------- 30%OFF ------------------*/
 .promo {
   background-image: url(../img/Basket2.jpg);
   background-attachment: fixed;
@@ -56,12 +60,11 @@
   height: 200px; }
   .promo h1 {
     color: azure;
+    padding: 2% 0 1%;
+    text-shadow: #555 2px 2px 3px;
     text-align: center;
     font-size: 3em;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    padding-top: 2%;
-    padding-bottom: 1%;
-    text-shadow: #555 2px 2px 3px; }
+    font-family: Georgia, 'Times New Roman', Times, serif; }
   .promo p {
     color: azure;
     text-align: center;
@@ -75,20 +78,13 @@
     .promo p {
       font-size: 80%; } }
 
-/* !----------------- SECTION 1 ------------------ */
 #principal {
   background: linear-gradient(rgba(4, 7, 12, 0.75), rgba(4, 7, 12, 0.75)), url(../img/fondo-blanco.jpg) no-repeat center center;
   background-size: cover; }
 
-.contenedor-gen {
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse; }
-
 .contenedor-texto {
-  padding-top: 2%;
-  padding-bottom: 2%;
-  text-align: center;
+  padding: 2% 0 1%;
+  align-items: center;
   color: whitesmoke;
   margin-right: 20%; }
 
