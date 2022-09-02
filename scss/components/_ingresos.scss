@@ -1,4 +1,8 @@
 /**----------------- INGRESOS --------------*/
+#nav-ingresos{
+    background-color: #F6FBF4;
+}
+
 .ing-titulo {
     font-size: large;
     text-align: center;
@@ -10,8 +14,26 @@
             font-family: Georgia, 'Times New Roman', Times, serif;
             padding-top: 2%;
             padding-bottom: 1%;
-            text-shadow: red 2px 2px 3px; }
+            text-shadow: rgb(37, 37, 37) 2px 2px 3px; }
             p {
                 text-shadow: whitesmoke 2px 2px 3px;
             }
+    }
+
+    #card-1, #card-2{
+        margin-left: 10px;
+    }
+
+    @media (max-width:1010px ){
+        #card-1, #card-2{
+            margin-left: 0;
+        }
+    }
+
+    @media (max-width:610px ){
+        .ing-titulo{
+            h2{
+                font-size: 2em;
+            }
+        }
     }

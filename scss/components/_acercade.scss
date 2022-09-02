@@ -1,21 +1,47 @@
 
 /**----------------- SOBRE NOSOTROS --------------*/
-.acd_1{
-    padding-top: 1%;
-padding-left: 1%;
-padding-bottom: 1%;
+#nav-acercade{
+    background-color: #9cbd8c;
 }
 
-.acd_2{
-    padding-left: 1%;
-    padding-bottom: 1%;
-}
+.main-acercade{
 
-.acd_map{
-    padding-left: 1%;
-    padding-bottom: 1%;
+background-color: #D2D79F;
+article{
+    section{
+        
+        h2{
+            padding-top: 3%;
+            margin: 0 5% 2% ;
+            font-family: monospace;
+            
+        }
+        p{
+            font-size: 17px;
+            margin: 0 12% 0 3%;
+        }
+    }
+    .section2{
+        text-align: end;
+        p{
+            margin: 0 3% 0 12%;
+        }
+    }
+    .section3{
+        text-align: center;
+        p{
+            margin: 0 12%;
+        }
+    }
+    div{
+        display: flex;
+        justify-content: center;
+        h3{
+            border: solid 2px;
+            padding: 10px;
+            margin-top: 5%;
+            background:#DFE8CC;
+        }
+    }
+}    
 }
-
-.acd_map h3 {
-    padding-bottom: 1%
-} 

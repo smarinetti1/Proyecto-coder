@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
 * {
   margin: 0;
@@ -9,24 +10,49 @@
   align-items: center;
   flex-direction: row-reverse; }
 
+#nav-contacto {
+  background-color: #256D85; }
+
+#main-contacto {
+  background-color: #7FBCD2; }
+  #main-contacto section .contacto-h4 {
+    text-align: center;
+    padding-top: 3%; }
+
 /**----------------- SOBRE NOSOTROS --------------*/
-.acd_1 {
-  padding-top: 1%;
-  padding-left: 1%;
-  padding-bottom: 1%; }
+#nav-acercade {
+  background-color: #9cbd8c; }
 
-.acd_2 {
-  padding-left: 1%;
-  padding-bottom: 1%; }
-
-.acd_map {
-  padding-left: 1%;
-  padding-bottom: 1%; }
-
-.acd_map h3 {
-  padding-bottom: 1%; }
+.main-acercade {
+  background-color: #D2D79F; }
+  .main-acercade article section h2 {
+    padding-top: 3%;
+    margin: 0 5% 2%;
+    font-family: monospace; }
+  .main-acercade article section p {
+    font-size: 17px;
+    margin: 0 12% 0 3%; }
+  .main-acercade article .section2 {
+    text-align: end; }
+    .main-acercade article .section2 p {
+      margin: 0 3% 0 12%; }
+  .main-acercade article .section3 {
+    text-align: center; }
+    .main-acercade article .section3 p {
+      margin: 0 12%; }
+  .main-acercade article div {
+    display: flex;
+    justify-content: center; }
+    .main-acercade article div h3 {
+      border: solid 2px;
+      padding: 10px;
+      margin-top: 5%;
+      background: #DFE8CC; }
 
 /**----------------- INGRESOS --------------*/
+#nav-ingresos {
+  background-color: #F6FBF4; }
+
 .ing-titulo {
   font-size: large;
   text-align: center;
@@ -38,9 +64,20 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
     padding-top: 2%;
     padding-bottom: 1%;
-    text-shadow: red 2px 2px 3px; }
+    text-shadow: #252525 2px 2px 3px; }
   .ing-titulo p {
     text-shadow: whitesmoke 2px 2px 3px; }
+
+#card-1, #card-2 {
+  margin-left: 10px; }
+
+@media (max-width: 1010px) {
+  #card-1, #card-2 {
+    margin-left: 0; } }
+
+@media (max-width: 610px) {
+  .ing-titulo h2 {
+    font-size: 2em; } }
 
 /*----------------- PRODUCTOS --------------*/
 #gallery .col-lg-4 {
@@ -51,32 +88,33 @@
     height: 250px;
     transition: all 2s ease-in-out; }
   #gallery .col-lg-4:hover {
-    transform: scaleY(1.1); }
+    transform: scale(1.1, 1.1); }
 
-.promo {
-  background-image: url(../img/Basket2.jpg);
-  background-attachment: fixed;
-  width: 100%;
-  height: 200px; }
-  .promo h1 {
-    color: azure;
-    padding: 2% 0 1%;
-    text-shadow: #555 2px 2px 3px;
-    text-align: center;
-    font-size: 3em;
-    font-family: Georgia, 'Times New Roman', Times, serif; }
-  .promo p {
-    color: azure;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif; }
+#main-productos {
+  background: linear-gradient(rgba(240, 236, 236, 0.75), rgba(240, 236, 236, 0.75)), url(../img/fondo-blanco.jpg) no-repeat center center;
+  background-size: cover; }
 
-@media (max-width: 995px) {
-  .promo {
-    height: 120px; }
-    .promo h1 {
-      font-size: 2em; }
-    .promo p {
-      font-size: 80%; } }
+.h1-produ {
+  color: black;
+  text-shadow: 0px 0px 3px #0e0e0e; }
+
+.pagina2 {
+  display: flex;
+  justify-content: center; }
+  .pagina2 h3 {
+    padding: 10px;
+    text-align: center;
+    border: solid slategrey 2px;
+    border-radius: 4px; }
+    .pagina2 h3 a {
+      color: gray;
+      text-decoration: none; }
+
+#nav-productos {
+  background-color: #ebe9e2; }
+
+#nav-index {
+  background-color: #EDEDED; }
 
 #principal {
   background: linear-gradient(rgba(4, 7, 12, 0.75), rgba(4, 7, 12, 0.75)), url(../img/fondo-blanco.jpg) no-repeat center center;
@@ -97,20 +135,27 @@
   transition: 2s; }
 
 @media (max-width: 1050px) {
+  .contenedor-texto {
+    text-align: center;
+    margin: 3%; }
   .cont-img img {
-    width: 80%; } }
-
-@media (max-width: 780px) {
-  .cont-img img {
-    border-radius: 20px;
-    margin-left: 4%;
-    padding: 2% 0 2% 0; }
-  .contenedor-texto p {
     display: none; } }
 
-@media (max-width: 560px) {
-  .cont-img img {
-    width: 90%;
-    border-radius: 20px;
-    margin-left: 4%;
-    padding: 2% 0 2% 0; } }
+aside {
+  background: linear-gradient(rgba(211, 213, 216, 0.75), rgba(211, 213, 216, 0.75)), url(../img/pexels-vinícius-pimenta-311626.jpg) fixed;
+  background-size: cover; }
+  aside .aside {
+    text-align: center;
+    padding: 2%; }
+    aside .aside h3 {
+      text-shadow: 0px 0px 10px #939696;
+      margin-bottom: 20px; }
+    aside .aside a {
+      font-weight: 500;
+      border: solid #18062a;
+      border-radius: 10px;
+      font-size: 20px;
+      padding: 3px;
+      text-decoration: none;
+      color: black;
+      background-color: rgba(220, 206, 206, 0.702); }
